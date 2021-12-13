@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background: #000 ; max-height: 100vh;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#body{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //transition: all 2s ease-in-out;
+  background-image: url("https://www.leagueoflegends.com/static/base-2x-1f52ee2c1820c7cfe9031a6f7524c7b5.png");
+  max-height: 100vh;
+}
+#body-filter{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(0.2);
+  transition: opacity 1.5s ease-in-out;
+  max-height: 100vh;
+}
+

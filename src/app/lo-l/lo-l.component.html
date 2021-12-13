@@ -1,0 +1,17 @@
+<div class="card-box">
+    <mat-card class="example-card">
+      <mat-card-title>{{champ}}</mat-card-title>
+      <mat-card-header>M{{mastery}}</mat-card-header>
+      <mat-card-actions>
+        <mat-slider min="1" max="7" step="1" value="4" (change)="onSelected($event.value)"></mat-slider>
+        {{selected}}
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button (click)="SetData('adc')">Adc</button>
+        <button mat-button (click)="SetData('supp')">Supp</button>
+        <button mat-button (click)="SetData('mid')">Mid</button>
+        <button mat-button (click)="SetData('jgl')">Jgl</button>
+        <button mat-button (click)="SetData('top')">Top</button>
+      </mat-card-actions>
+    </mat-card>
+</div>
